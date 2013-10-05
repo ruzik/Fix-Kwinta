@@ -1,0 +1,59 @@
+-- удаление квестов выдаваемых манекенами тики
+
+DELETE FROM `creature_questrelation` WHERE id=38038;
+
+-- UPDATE `creature_questrelation` SET id=38037 WHERE id=38038 AND quest=24639;
+-- UPDATE `creature_questrelation` SET id=38246 WHERE id=38038 AND quest=24751;
+-- UPDATE `creature_questrelation` SET id=38242 WHERE id=38038 AND quest=24759;
+-- UPDATE `creature_questrelation` SET id=38243 WHERE id=38038 AND quest=24765;
+-- UPDATE `creature_questrelation` SET id=38244 WHERE id=38038 AND quest=24771;
+-- UPDATE `creature_questrelation` SET id=38247 WHERE id=38038 AND quest=24777;
+-- UPDATE `creature_questrelation` SET id=38245 WHERE id=38038 AND quest=24783;
+-- UPDATE `creature_questrelation` SET id=42618 WHERE id=38038 AND quest=26273;
+
+-- квест на верный выстрел у троллей охотников
+
+UPDATE quest_template SET ReqSpellCast1=56641 WHERE entry=24778;
+
+-- удаление движения у тотемов тики
+
+UPDATE creature_template SET unit_flags=4 WHERE entry=38038;
+
+-- волджин вырывание из фазы
+
+UPDATE `creature_template_addon` SET auras=NULL WHERE entry=38966;
+
+-- коготь вырывание фазы
+
+UPDATE creature_template_addon SET auras=NULL WHERE entry=37989;
+
+-- квест с арканом когтя
+
+UPDATE quest_template SET ReqSpellCast1=70927, ReqSpellCast2=70927 WHERE entry=24626;
+
+
+-- свисток детенышей
+
+UPDATE quest_template SET ReqSpellCast1=70874 WHERE entry=24623;
+
+-- каст яда скорпионов
+
+DELETE FROM creature_ai_scripts WHERE creature_id=3125;
+INSERT INTO creature_ai_scripts VALUES (312501, 3125, 0, 0, 100, 0, 3000, 4000, 12000, 13000, 11, 73672, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Clattering Scorpid - Envenom');
+
+-- территориальный амулет
+
+DELETE FROM spell_script_target WHERE entry=72070;
+INSERT INTO spell_script_target VALUES (72070,0,202113,0);
+
+-- яма испытаний
+
+UPDATE creature_template SET unit_flags=559104 WHERE entry=38142;
+
+-- снижение потерь
+
+UPDATE creature_template SET gossip_menu_id=39270 WHERE entry=39270;
+UPDATE `gossip_menu` SET script_id=39270 WHERE entry=39270;
+DELETE FROM `dbscripts_on_gossip` WHERE id=39270;
+INSERT INTO `dbscripts_on_gossip` VALUES (39270, 0, 8, 39270, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kill Credit');
+
