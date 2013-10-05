@@ -1,0 +1,65 @@
+INSERT INTO game_event VALUES (120, '2011-01-05 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Sartharion Must Die!');
+INSERT INTO game_event VALUES (121, '2011-01-12 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Anub\'Rekhan Must Die!');
+INSERT INTO game_event VALUES (122, '2011-01-19 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Noth the Plaguebringer Must Die!');
+INSERT INTO game_event VALUES (123, '2011-01-26 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Instructor Razuvious Must Die!');
+INSERT INTO game_event VALUES (124, '2011-02-02 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Patchwerk Must Die!');
+INSERT INTO game_event VALUES (125, '2011-02-09 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Malygos Must Die!');
+INSERT INTO game_event VALUES (126, '2011-02-16 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Flame Leviathan Must Die!');
+INSERT INTO game_event VALUES (127, '2011-02-23 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Razorscale Must Die!');
+INSERT INTO game_event VALUES (128, '2011-03-02 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Ignis the Furnace Master Must Die!');
+INSERT INTO game_event VALUES (129, '2011-03-09 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - XT-002 Deconstructor Must Die!');
+INSERT INTO game_event VALUES (130, '2011-03-16 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Lord Jaraxxus Must Die!');
+INSERT INTO game_event VALUES (131, '2011-03-23 05:55:00', '2020-12-30 23:00:00', 120960, 10080, 0, 'Weekly - Lord Marrowgar Must Die!');
+
+
+
+INSERT INTO `game_event_creature` VALUES (5377610, 120);
+INSERT INTO `game_event_creature` VALUES (5377611, 121);
+INSERT INTO `game_event_creature` VALUES (5377612, 122);
+INSERT INTO `game_event_creature` VALUES (5377613, 123);
+INSERT INTO `game_event_creature` VALUES (5377614, 124);
+INSERT INTO `game_event_creature` VALUES (5377615, 125);
+INSERT INTO `game_event_creature` VALUES (5377616, 126);
+INSERT INTO `game_event_creature` VALUES (5377617, 127);
+INSERT INTO `game_event_creature` VALUES (5377618, 128);
+INSERT INTO `game_event_creature` VALUES (5377619, 129);
+INSERT INTO `game_event_creature` VALUES (5377620, 130);
+INSERT INTO `game_event_creature` VALUES (5377621, 131);
+INSERT INTO `game_event_creature` VALUES (5377635, 120);
+INSERT INTO `game_event_creature` VALUES (5377636, 121);
+INSERT INTO `game_event_creature` VALUES (5377637, 122);
+INSERT INTO `game_event_creature` VALUES (5377638, 123);
+INSERT INTO `game_event_creature` VALUES (5377639, 124);
+INSERT INTO `game_event_creature` VALUES (5377640, 125);
+INSERT INTO `game_event_creature` VALUES (5377641, 126);
+INSERT INTO `game_event_creature` VALUES (5377642, 127);
+INSERT INTO `game_event_creature` VALUES (5377643, 128);
+INSERT INTO `game_event_creature` VALUES (5377644, 129);
+INSERT INTO `game_event_creature` VALUES (5377645, 130);
+INSERT INTO `game_event_creature` VALUES (5377646, 131);
+INSERT INTO `game_event_creature` VALUES (5377664, 120);
+INSERT INTO `game_event_creature` VALUES (5377665, 121);
+INSERT INTO `game_event_creature` VALUES (5377666, 122);
+INSERT INTO `game_event_creature` VALUES (5377667, 123);
+INSERT INTO `game_event_creature` VALUES (5377668, 124);
+INSERT INTO `game_event_creature` VALUES (5377669, 125);
+INSERT INTO `game_event_creature` VALUES (5377670, 126);
+INSERT INTO `game_event_creature` VALUES (5377671, 127);
+INSERT INTO `game_event_creature` VALUES (5377672, 128);
+INSERT INTO `game_event_creature` VALUES (5377673, 129);
+INSERT INTO `game_event_creature` VALUES (5377674, 130);
+INSERT INTO `game_event_creature` VALUES (5377675, 131);
+
+
+INSERT INTO `game_event_quest` VALUES (24579, 120);
+INSERT INTO `game_event_quest` VALUES (24580, 121);
+INSERT INTO `game_event_quest` VALUES (24581, 122);
+INSERT INTO `game_event_quest` VALUES (24582, 123);
+INSERT INTO `game_event_quest` VALUES (24583, 124);
+INSERT INTO `game_event_quest` VALUES (24584, 125);
+INSERT INTO `game_event_quest` VALUES (24585, 126);
+INSERT INTO `game_event_quest` VALUES (24586, 127);
+INSERT INTO `game_event_quest` VALUES (24587, 128);
+INSERT INTO `game_event_quest` VALUES (24588, 129);
+INSERT INTO `game_event_quest` VALUES (24589, 130);
+INSERT INTO `game_event_quest` VALUES (24590, 131);
