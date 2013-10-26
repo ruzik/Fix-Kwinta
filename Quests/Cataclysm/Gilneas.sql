@@ -4,8 +4,7 @@ UPDATE `creature_template_addon` SET auras=NULL WHERE entry=34936;
 
 -- убраны монеты с ворон
 
-UPDATE creature_template SET mingold=0 WHERE entry=50260;
-UPDATE creature_template SET maxgold=0 WHERE entry=50260;
+UPDATE creature_template SET mingold=0, maxgold=0 WHERE entry=50260;
 
 -- атакуемые горожане
 
@@ -13,8 +12,7 @@ UPDATE creature_template SET unit_flags=0 WHERE entry=34981;
 
 -- квест друидов воргенов
 
-UPDATE quest_template SET ReqCreatureOrGOId1=47091 WHERE entry=14283;
-UPDATE quest_template SET ReqSpellCast1=774 WHERE entry=14283;
+UPDATE quest_template SET ReqCreatureOrGOId1=47091, ReqSpellCast1=774 WHERE entry=14283;
 
 -- квест последняя капля человечности
 
@@ -32,12 +30,7 @@ INSERT INTO `dbscripts_on_quest_start` VALUES (14212, 2, 6, 654, 0, 0, 0, 0, 0, 
 -- снятие опыта у воргенов на площади 
 
 
-UPDATE creature_template SET flags_extra=64 WHERE entry=35229;
-UPDATE creature_template SET flags_extra=64 WHERE entry=51277;
-UPDATE creature_template SET flags_extra=64 WHERE entry=38616;
-UPDATE creature_template SET flags_extra=64 WHERE entry=38618;
-UPDATE creature_template SET flags_extra=64 WHERE entry=38617;
-
+UPDATE creature_template SET flags_extra=64 WHERE entry in (35229, 51277, 38616, 38618, 38617);
 
 
 -- пушка повстанцев
@@ -93,10 +86,7 @@ UPDATE creature_template SET IconName = 'vehichleCursor',vehicle_id=866 WHERE en
 
 -- снятие опыта на эльфийском метателе глеф
 
-UPDATE creature_template SET flags_extra=64 WHERE entry=37916;
-UPDATE creature_template SET flags_extra=64 WHERE entry=37939;
-UPDATE creature_template SET flags_extra=64 WHERE entry=37938;
-UPDATE creature_template SET flags_extra=64 WHERE entry=37921;
+UPDATE creature_template SET flags_extra=64 WHERE entry in (37916, 37939, 37938, 37921);
 
 
 -- телепорт в дарнас
@@ -106,5 +96,4 @@ INSERT INTO dbscripts_on_quest_end VALUES (14434, 0, 14, 76642, 0, 0, 0, 0, 0, 0
 
 -- моб в дарнасе
 
-DELETE FROM `creature_template_addon` WHERE entry=48736;
-DELETE FROM `creature_template_addon` WHERE entry=48735;
+DELETE FROM `creature_template_addon` WHERE entry in (48736, 48735);
