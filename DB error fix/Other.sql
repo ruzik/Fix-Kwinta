@@ -1,4 +1,5 @@
 -- удаление отсутствующих моделей
+
 SELECT DISTINCT CreatureDisplayID
 FROM creature_template_model
 WHERE NOT EXISTS (SELECT DisplayID FROM creature_model_info WHERE DisplayID=creature_template_model.CreatureDisplayID);
